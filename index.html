@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Startup Survey</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1 id="title">Startup Survey</h1>
+
+        <h3>
+            <p id="description">This survey would help us to know if we have learned css and html</p>
+        </h3>
+
+        <form id="survey-form" action="">
+            <label id="name-label">
+                <h3>Name</h3>
+                <input id="name" type="text" placeholder="Enter your Name" required>
+            </label>
+            <label id="email-label">
+                <h3>Email</h3>
+                <input id="email" type="email" name="email" placeholder="Enter your Email" required>
+            </label>
+            <label id="number-label">
+                <h3>Age</h3>
+                <input id="number" type="number" min="13" max="110" placeholder="Enter your Age">
+            </label>
+
+            <label>
+                <h3>Hobbies</h3>
+                <select name="" id="dropdown">
+                    <option value="">Read</option>
+                    <option value="">Write</option>
+                    <option value="">Videogames</option>
+                </select>
+            </label>
+            <br>
+            <h3>Would you like to create an startup?</h3>
+            <div class="radio-buttons">
+                <label for="ideas">
+
+                    <input id="ideas" type="radio" value="like" name="subjects">I would like <br>
+                    <input id="ideas" type="radio" value="interest" name="subjects">I´m not interesting <br>
+                    <input id="ideas" type="radio" value="how" name="subjects">Not really. I know how to do it. <br>
+                    <input id="ideas" type="radio" value="learn" name="subjects">I don't know, but I want to learn more
+                    <br>
+                </label><br>
+            </div>
+            <h3>What specific topics do you know?</h3>
+            <div class="checkbox-buttons">
+
+                <label><input id="check" type="checkbox" value="javascript">Javascript</label><br>
+                <label><input id="check" type="checkbox" value="css">CSS</label><br>
+                <label><input id="check" type="checkbox" value="html">Html</label><br>
+                <label><input id="check" type="checkbox" value="pwa">PWA</label><br>
+                <label><input id="check" type="checkbox" value="nodje">Node js</label><br>
+            </div>
+
+
+            <h3>Additional comments:</h3>
+            <textarea id="area" cols="50" rows="10" placeholder="Enter your comments here ..."></textarea><br>
+
+            <button id="submit" type="submit">Submit</button>
+        </form>
+
+    </div>
+</body>
+
+</html>
